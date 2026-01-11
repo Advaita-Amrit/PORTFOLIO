@@ -33,7 +33,7 @@ const Footer = () => {
 					<div className="space-y-4">
 						<Link href="/" className="flex items-center space-x-3">
 							<Code2 className="w-8 h-8 text-white" />
-							<span className="text-xl font-bold text-white">Advaita Amrit</span>
+							<span suppressHydrationWarning className="text-xl font-bold text-white">Advaita Amrit</span>
 						</Link>
 						<p className="text-sm text-gray-400">
 							Information Science and Engineering Undergrad
@@ -139,14 +139,14 @@ const Footer = () => {
 				<div className="border-t border-white/10 py-6">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<p className="text-sm text-gray-400">
-							© {currentYear} Advaita Amrit. All rights reserved.
+							© {currentYear} <span suppressHydrationWarning>Advaita Amrit</span>. All rights reserved.
 						</p>
 						<div className="flex space-x-6 mt-4 md:mt-0">
 							<span className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
 								<svg className="w-3 h-3" fill="currentColor" viewBox="0 0 32 32">
 									<path d="M12 1L24 22H0L12 1Z" />
 								</svg>
-								advaita's Portfolio
+								Advaita's Portfolio
 							</span>
 						</div>
 					</div>

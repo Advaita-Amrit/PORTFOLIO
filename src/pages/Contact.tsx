@@ -19,10 +19,38 @@ const Contact = () => {
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		setIsSubmitting(true);
+		setSubmitStatus('idle');
 
-		// Simulate form submission
-		await new Promise(resolve => setTimeout(resolve, 1000));
-		setSubmitStatus('success');
+		try {
+			const response = await fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: JSON.stringify({
+					access_key: '54c00d1a-5ec4-4aeb-a7ec-1435c9722582',
+					name: formData.name,
+					email: formData.email,
+					subject: formData.subject,
+					message: formData.message,
+					to: 'advaitaamrit@gmail.com'
+				})
+			});
+
+			const result = await response.json();
+
+			if (result.success) {
+				setSubmitStatus('success');
+				setFormData({ name: '', email: '', subject: '', message: '' }); // Clear form on success
+			} else {
+				setSubmitStatus('error');
+			}
+		} catch (error) {
+			console.error('Error submitting form:', error);
+			setSubmitStatus('error');
+		}
+
 		setIsSubmitting(false);
 	};
 
@@ -164,7 +192,7 @@ const Contact = () => {
 							</div>
 						</motion.div>
 
-						<motion.div
+						{/* <motion.div
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.6 }}
@@ -176,7 +204,7 @@ const Contact = () => {
 								<p>Saturday: 10:00 AM - 2:00 PM (IST)</p>
 								<p>Sunday: Closed</p>
 							</div>
-						</motion.div>
+						</motion.div> */}
 					</div>
 
 					{/* Right Column - Contact Form */}
@@ -267,6 +295,16 @@ const Contact = () => {
 									className="text-green-400 text-center text-sm sm:text-base"
 								>
 									Message sent successfully! I'll get back to you soon.
+								</motion.p>
+							)}
+
+							{submitStatus === 'error' && (
+								<motion.p
+									initial={{ opacity: 0, y: 10 }}
+									animate={{ opacity: 1, y: 0 }}
+									className="text-red-400 text-center text-sm sm:text-base"
+								>
+									Failed to send message. Please try again or contact me directly.
 								</motion.p>
 							)}
 						</form>

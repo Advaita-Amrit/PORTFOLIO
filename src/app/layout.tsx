@@ -20,8 +20,6 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Advaita Amrit' }],
 	creator: 'Advaita Amrit',
 	manifest: '/manifest.json',
-	themeColor: '#000000',
-	viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
@@ -55,6 +53,13 @@ export const metadata: Metadata = {
 	},
 };
 
+export function generateViewport() {
+	return {
+		viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
+		themeColor: '#000000',
+	};
+}
+
 export default function RootLayout({
 	children,
 }: {
@@ -65,11 +70,11 @@ export default function RootLayout({
 			<head>
 				<link rel="shortcut icon" href="/nextjs.png" type="image/x-icon" />
 				<link rel="apple-touch-icon" href="/nextjs.png" />
-				<meta name="theme-color" content="#000000" />
 				<link rel="manifest" href="/manifest.json" />
 				<meta httpEquiv="Content-Security-Policy" content="default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https: http:; font-src 'self' data: https:; connect-src 'self' data: blob: https:; worker-src 'self' blob: data:;" />
 			</head>
 			<body>
+				<script dangerouslySetInnerHTML={{__html: `try{const s=localStorage.getItem('username');if(s&&s.toLowerCase()==='advaita'){localStorage.setItem('username','Advaita Amrit');}}catch(e){}`}} />
 				<div className="min-h-screen flex flex-col">
 					<Background3D />
 					<Navbar />

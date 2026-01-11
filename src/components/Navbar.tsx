@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Code2, Menu, X } from 'lucide-react';
-import SearchDialog from './SearchDialog';
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +14,6 @@ const Navbar = () => {
 		{ path: '/', label: 'Home' },
 		{ path: '/about', label: 'About' },
 		{ path: '/education', label: 'Education' },
-		{ path: '/experience', label: 'Experience' },
 		{ path: '/skills', label: 'Skills' },
 		{ path: '/projects', label: 'Projects' },
 		{ path: '/certificates', label: 'Certificates' },
@@ -37,12 +35,11 @@ const Navbar = () => {
 						{/* Logo */}
 						<Link href="/" className="flex items-center space-x-3">
 							<Code2 className="w-8 h-8 text-white" />
-							<span className="text-xl font-bold text-white">advaita</span>
+							<span suppressHydrationWarning className="text-xl font-bold text-white">Advaita Amrit</span>
 						</Link>
 
 						{/* Desktop Navigation */}
 						<div className="hidden md:flex items-center space-x-6">
-							<SearchDialog />
 							{navLinks.map(link => (
 								<Link
 									key={link.path}
@@ -55,8 +52,7 @@ const Navbar = () => {
 						</div>
 
 						{/* Mobile header right section */}
-						<div className="flex md:hidden items-center space-x-2">
-							<SearchDialog />
+						<div className="flex md:hidden items-center">
 							<button
 								className="p-2 text-gray-400 hover:text-white transition-colors"
 								onClick={() => setIsMenuOpen(!isMenuOpen)}

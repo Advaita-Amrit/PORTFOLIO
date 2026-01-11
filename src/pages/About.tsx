@@ -1,36 +1,36 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code2, Briefcase, GraduationCap, Award, Users, Globe } from 'lucide-react';
+import { Code2, Wrench, Briefcase, GraduationCap, Award, Users, Globe } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 
 const About = () => {
 	const achievements = [
 		{
-			icon: <Code2 className="w-6 h-6" />,
+			icon: <Wrench className="w-6 h-6" />,
 			title: "10+ Projects",
-			description: "Completed full-stack web applications"
+			description: "Multi-Domain Project Experience"
 		},
 		{
-			icon: <Briefcase className="w-6 h-6" />,
-			title: "3+ Internships",
-			description: "Professional work experience"
+			icon: <Code2 className="w-6 h-6" />,
+			title: "200+ DSA Problems",
+			description: "Practiced on LeetCode & GeeksforGeeks"
 		},
 		{
 			icon: <GraduationCap className="w-6 h-6" />,
-			title: "8+ CGPA",
-			description: "Academic excellence"
+			title: "8.5 CGPA",
+			description: "Core Fundamentals & Academics"
 		}
 	];
 
 	const interests = [
 		"Web Development",
+		"Artificial Intelligence",
+		"Mobile App Development",
+		"Robotics",
 		"UI/UX Design",
-		"Cloud Computing",
-		"DevOps",
-		"Open Source",
-		"Artificial Intelligence"
+		"Blockchain Technology"
 	];
 
 	return (

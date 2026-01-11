@@ -10,7 +10,8 @@ import {
 	CppLogo, PythonLogo, JavaScriptLogo, HTML5Logo,
 	CSSLogo, ReactLogo, TypeScriptLogo, NodeLogo, MySQLLogo,
 	MongoDBLogo, VSCodeLogo, GitLogo, TailwindLogo, ShadCNLogo, NextjsLogo,
-	VirtualBoxLogo, VercelLogo
+	VirtualBoxLogo, VercelLogo, OracleLogo, AndroidStudioLogo, FigmaLogo, SupabaseLogo, FirebaseLogo,
+	DartLogo
 } from '@/components/TechLogos';
 
 const skills = [
@@ -20,15 +21,15 @@ const skills = [
 		items: [
 			{ name: 'C++', icon: <CppLogo /> },
 			{ name: 'Python', icon: <PythonLogo /> },
-			{ name: 'JavaScript', icon: <JavaScriptLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
+			{ name: 'TypeScript', icon: <TypeScriptLogo /> },			
+			{ name: 'Dart', icon: <DartLogo /> }
 		]
 	},
 	{
 		category: 'Front-End Development',
 		icon: <Layout className="w-6 h-6" />,
 		items: [
-			{ name: 'HTML5', icon: <HTML5Logo /> },
+			{ name: 'React.js', icon: <ReactLogo /> },
 			{ name: 'CSS3', icon: <CSSLogo /> },
 			{ name: 'Tailwind', icon: <TailwindLogo /> },
 			{ name: 'ShadCN', icon: <ShadCNLogo /> }
@@ -38,20 +39,19 @@ const skills = [
 		category: 'Back-End Development',
 		icon: <Server className="w-6 h-6" />,
 		items: [
-			{ name: 'React.js', icon: <ReactLogo /> },
+			{ name: 'Flask', icon: <PythonLogo /> },
 			{ name: 'Node.js', icon: <NodeLogo /> },
-			{ name: 'Next.js', icon: <NextjsLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
+			{ name: 'Next.js', icon: <NextjsLogo /> }
 		]
 	},
 	{
 		category: 'Databases & Cloud Storage',
 		icon: <Database className="w-6 h-6" />,
 		items: [
-			{ name: 'MySQL', icon: <MySQLLogo /> },
-			{ name: 'MongoDB', icon: <MongoDBLogo /> },
-			{ name: 'Cloudinary', icon: <Cloud className="w-4 h-4" /> },
-			{ name: 'NoSQL', icon: <Database className="w-4 h-4" /> }
+			{ name: 'Oracle DB', icon: <OracleLogo /> },
+			{ name: 'Supabase', icon: <SupabaseLogo /> },
+			{ name: 'Firebase', icon: <FirebaseLogo /> },
+			{ name: 'Cloudinary', icon: <Cloud className="w-4 h-4" /> }
 		]
 	},
 	{
@@ -60,8 +60,7 @@ const skills = [
 		items: [
 			{ name: 'Git', icon: <GitLogo /> },
 			{ name: 'GitHub', icon: <GitLogo /> },
-			{ name: 'Vercel', icon: <VercelLogo /> },
-			{ name: 'CI/CD', icon: <Code2 /> }
+			{ name: 'Vercel', icon: <VercelLogo /> }
 		]
 	},
 	{
@@ -69,20 +68,20 @@ const skills = [
 		icon: <Wrench className="w-6 h-6" />,
 		items: [
 			{ name: 'VS Code', icon: <VSCodeLogo /> },
-			{ name: 'Workbench', icon: <MySQLLogo /> },
-			{ name: 'Compass', icon: <MongoDBLogo /> },
-			{ name: 'VirtualBox', icon: <VirtualBoxLogo /> }
+			{ name: 'AndroidStudio', icon: <AndroidStudioLogo /> },
+			{ name: 'Figma', icon: <FigmaLogo /> }
 		]
 	},
 	{
-		category: 'Operating Systems',
-		icon: <Terminal className="w-6 h-6" />,
+		category: 'Library',
+		icon: <Terminal className="w-13 h-6" />,
 		items: [
-			{ name: 'Windows', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Ubuntu', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Parrot OS', icon: <Terminal className="w-4 h-4" /> }
-		]
+			{ name: 'OpenCV2', icon: <Terminal className="w-4 h-4" /> },
+			{ name: 'NumPy', icon: <Terminal className="w-4 h-4" /> },
+			{ name: 'Dlib', icon: <Terminal className="w-4 h-4" /> },
+			{ name: 'Panda', icon: <Terminal className="w-4 h-4" /> }
+		],
+		span: true
 	},
 	{
 		category: 'Soft Skills',
@@ -112,7 +111,7 @@ const Skills = () => {
 			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{skills.map((skillGroup, index) => (
 					<ScrollAnimation key={skillGroup.category}>
-						<div className="bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm hover:bg-gray-800/70 transition-all border border-white/5">
+						<div className={`bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm hover:bg-gray-800/70 transition-all border border-white/5 ${skillGroup.span ? 'md:col-span-2 lg:col-span-2' : ''}`}>
 							<div className="flex items-center space-x-3 mb-6">
 								<div className="p-2 bg-white/10 rounded-lg">
 									{skillGroup.icon}

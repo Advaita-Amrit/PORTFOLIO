@@ -9,40 +9,53 @@ import Image from 'next/image';
 const Education = () => {
 	const educationData = [
 		{
-			school: "Bengal College of Engineering and Technology",
-			location: "Durgapur, WB, India",
-			duration: "July 2020 - June 2024",
-			degree: "B.Tech (Computer Science and Engineering)",
-			grade: " (80%)",
-			image: "/education/college_img.jpg",
-			resultUrl: "/files/education_pdf/B Tech.pdf",
+			school: "Siddaganga Institute of Technology, Tumkur",
+			location: "Tumkur, KA, India",
+			duration: "Sept 2023 - Present",
+			degree: "Bachelor of Engineering (Information Science & Engineering)",
+			grade: " 8.5 CGPA",
+			image: "/education/college_img1.jpg",
 			coursework: [
 				"DSA",
 				"OOPs",
 				"DBMS",
-				"AI",
-				"ML",
+				"AIML",				
 				"OS",
-				"Networking",
+				"CN",
+				"Web Development"
 			],
-			description: "During my time at BCET, I have built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges has helped me enhance my technical and analytical skills. This experience prepares me for a future in software development, equipping me with the ability to create scalable and efficient solutions."
+			description: "Currently at SIT, Tumkur, I am building a strong foundation in Information Science, focusing on software development, automation, and real-world applications. Engaging in hands-on projects, and coding challenges is helping me continuously enhance my technical and analytical skills. This ongoing experience is preparing me for a future in software development, equipping me with the ability to create scalable and efficient solutions."
 		},
 		{
-			school: "Birsingha Bhagabati Vidyalaya",
-			location: "Medinipur, WB, India",
-			duration: "June 2018 - July 2019",
-			degree: "Higher Secondary (WBSC)",
+			school: "Sacred Heart School ",
+			location: "Sitamarhi, BR, India",
+			duration: "March 2021 - March 2023",
+			degree: "Higher Secondary (CBSE)",
 			grade: "Percentage: 79%",
-			image: "/education/school_img.jpg",
-			resultUrl: "/files/education_pdf/HS MARK SHEET.pdf",
+			image: "/education/school_img1.jpg",
+			subjects: [
+				"Physics",
+				"Chemistry",
+				"Mathematics"
+			],
+			description: "My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on Physics, Chemistry, and Mathematics has been instrumental in shaping my logical approach to software development, enabling me to break down complex technical challenges with precision and confidence."
+		},
+		{
+			school: "Podar International School",
+			location: "Sambhajinagar, MH, India",
+			duration: "April 2019 - March 2021",
+			degree: "Secondary School (ICSE)",
+			grade: "Percentage: 90%",
+			image: "/education/school_img2.jpg",
 			subjects: [
 				"Physics",
 				"Chemistry",
 				"Mathematics",
 				"Biology",
-				"Computer Science"
+				"Java",
+				"Web Development"
 			],
-			description: "My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science has been instrumental in shaping my passion for software development, enabling me to approach complex technical challenges with confidence."
+			description: "My secondary education at Podar International School under the ICSE curriculum laid the initial groundwork for my technical journey. It was here that I received my first formal introduction to Java programming and the basics of Web Development. This early exposure to coding logic and software creation was instrumental in igniting my genuine interest in the domain, setting the stage for my future endeavors in Software domain."
 		}
 	];
 
@@ -143,7 +156,7 @@ const Education = () => {
 										</div>
 									)}
 
-									<motion.a
+									{/* <motion.a
 										href={edu.resultUrl}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -152,7 +165,7 @@ const Education = () => {
 									>
 										View Result
 										<ExternalLink className="w-4 h-4" />
-									</motion.a>
+									</motion.a> */}
 								</div>
 							</div>
 						</motion.div>

@@ -7,61 +7,38 @@ import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const certificates = [
 	{
-		title: "Typescript Programming",
-		issuer: "Geekster",
-		date: "22th April 2025",
-		link: "./files/certificates_pdf/Typescript.pdf",
-		description: "Covers TypeScript fundamentals, including syntax, types. Includes practical examples and real-world applications.",
-		skills: ["TypeScript", "JavaScript", "Frontend Development", "Backend Development"]
+		title: "Programming and Problem Solving using C++",
+		issuer: "CodeChef",
+		date: "27th January 2025",
+		link: "./files/certificates_pdf/sit1si23is002-Learn Programming and Problem Solving using C++.pdf",
+		description: "This is a technical course build a strong foundation in C++ and algorithmic logic. This certification validates that the learner has successfully completed all lessons and projects, demonstrating proficiency in programming concepts and problem-solving techniques.",
+		skills: ["Data Structure and Algorithm", "C++", "Problem Solving"]
 	},
 	{
-		title: "AWS ECS Deployment and Management",
-		issuer: "KodeKloud",
-		date: "20th March 2025",
-		link: "./files/certificates_pdf/aws_ecs.pdf",
-		description: "Covers deploying and managing containers on AWS using ECS, including cluster management, load balancing, auto-scaling, and CI/CD integration.",
-		skills: ["AWS ECS", "Cloud Computing", "DevOps", "CI/CD"]
+		title: "DBMS and SQL Programming",
+		issuer: "CodeChef",
+		date: "6th December 2025",
+		link: "./files/certificates_pdf/sit1si23is002-DBMS and SQL Programming.pdf",
+		description: "This Course focuses on the essential skills for managing and querying databases. The curriculum is structured around practical application, requiring learners to complete all assigned lessons and projects to ensure a strong grasp of the material.",
+		skills: ["Database Management", "SQL"]
 	},
 	{
-		title: "Critical Infrastructure Protection",
-		issuer: "OPSWAT Academy",
-		date: "26th February 2025",
-		link: "./files/certificates_pdf/critical_infrastructure_protection.pdf",
-		description: "Covers cybersecurity principles, infrastructure security, and risk mitigation strategies.",
-		skills: ["Cybersecurity", "Risk Management", "Industrial Security"]
+		title: "CCNA: Introduction to Networks",
+		issuer: "Cisco Networking Academy",
+		date: "13th December 2025",
+		link: "./files/certificates_pdf/CCNA Introduction to Networks certificate.pdf",
+		description: "This certification covers the architecture, structure, functions, components, and models of the Internet and other computer networks.",
+		skills: ["Network Fundamentals", "Data Communication"]
 	},
 	{
-		title: "JavaScript Programming",
+		title: "Agile and Scrum Training",
 		issuer: "HackerRank",
-		date: "18th February 2025",
-		link: "./files/certificates_pdf/javascript.pdf",
-		description: "Validates JavaScript fundamentals, including syntax, functions, and problem-solving.",
-		skills: ["JavaScript", "ES6", "Asynchronous Programming"]
-	},
-	{
-		title: "Docker Fundamentals",
-		issuer: "KodeKloud",
-		date: "18th Fabruary 2025",
-		link: "./files/certificates_pdf/docker_fundamentals.pdf",
-		description: "Teaches containerization, networking, security, and CI/CD with Docker.",
-		skills: ["Docker", "Containerization", "CI/CD"]
-	},
-	{
-		title: "Python Programming",
-		issuer: "HackeRank",
-		date: "10 Oct 2023",
-		link: "./files/certificates_pdf/python.pdf",
-		description: "Validates Python basics, including loops, functions, and data structures.",
-		skills: ["Python", "Functions", "Data Structures"]
-	},
-	{
-		title: "Cybersecurity Virtual Program",
-		issuer: "Forage",
-		date: "10 Jul 2023",
-		link: "./files/certificates_pdf/cybersecurity_virtual_program.pdf",
-		description: "Focuses on cybersecurity threats, vulnerabilities, and risk mitigation.",
-		skills: ["Cybersecurity", "Threat Mitigation", "Ransomware"]
+		date: "30th October 2025",
+		link: "./files/certificates_pdf/Agile and Scrum Training.pdf",
+		description: "The training provides a comprehensive overview of Agile principles and the Scrum framework, equipping learners with the knowledge to manage projects iteratively and incrementally.",
+		skills: ["Agile Methodology", "Scrum Framework", "Project Management"]
 	}
+	
 ];
 
 const Certificates = () => {
