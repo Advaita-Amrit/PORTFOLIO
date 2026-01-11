@@ -68,8 +68,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={inter.className}>
 			<head>
-				<link rel="shortcut icon" href="/nextjs.png" type="image/x-icon" />
-				<link rel="apple-touch-icon" href="/nextjs.png" />
+				<link rel="shortcut icon" href="/logoW.png" type="image/x-icon" />
+				<link rel="apple-touch-icon" href="/logoW.png" />
 				<link rel="manifest" href="/manifest.json" />
 				<meta httpEquiv="Content-Security-Policy" content="default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https: http:; font-src 'self' data: https:; connect-src 'self' data: blob: https:; worker-src 'self' blob: data:;" />
 			</head>
