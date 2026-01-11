@@ -2,10 +2,10 @@
 
 # Advaita Amrit's Portfolio 🚀
 
-[![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fadvaita1.vercel.app)](https://advaita1.vercel.app)
+[![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fadvaita1.vercel.app)](https://advaitaamrit.tech)
 [![GitHub followers](https://img.shields.io/github/followers/advaita-amrit?logo=github&style=for-the-badge)](https://github.com/Advaita-Amrit)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/advaita-amrit/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://advaita1.vercel.app)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://advaitaamrit.tech)
 [![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
   <p align="center">
@@ -14,7 +14,7 @@
 
   <h3>Full Stack Developer | MERN Specialist | Database Expert</h3>
 
-[View Live Demo](https://advaita1.vercel.app) · [Report Bug](https://github.com/Advaita-Amrit/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/Advaita-Amrit/Software-Dev-Portfolio/issues)
+[View Live Demo](https://advaitaamrit.tech) · [Report Bug](https://github.com/Advaita-Amrit/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/Advaita-Amrit/Software-Dev-Portfolio/issues)
 
 </div>
 

@@ -15,24 +15,33 @@ const inter = Inter({
 
 export const metadata: Metadata = {
 	title: 'Advaita Amrit - Software Developer',
-	description: 'Advaita Amrit - Full Stack Developer specializing in MERN stack, React.js, Node.js, and modern web technologies. Expert in database development and web applications.',
-	keywords: 'Advaita Amrit, advaita1, advaita1, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
+	description: 'Information Science Student @ SIT, Tumkur. Builder of web apps, robots, and community events. Passionate about Full-Stack Engineering, Artificial Intelligence, Blockchain, and open-source innovation.',
+	keywords: 'Advaita Amrit, advaita, advaitaamrit, Software Developer, Full Stack Developer, Android Developer, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, Oracle Expert, SQL Developer, Flutter Developer, MERN Stack Developer, Open Source Contributor, Tech Enthusiast, Portfolio, Advaita Portfolio',
 	authors: [{ name: 'Advaita Amrit' }],
 	creator: 'Advaita Amrit',
 	manifest: '/manifest.json',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://advaita1.vercel.app/',
+		url: 'https://advaitaamrit.tech/',
 		title: 'Advaita Amrit - Full Stack Developer',
-		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-		siteName: 'Advaita Amrit Portfolio',
+		description: 'Student. Developer. Builder. Currently studying Information Science at SIT, Tumkur. Passionate about turning complex logic into clean, efficient code for the web and robotics.',
+		siteName: 'Advaita Amrit - Engineer',
+		images: [
+            {
+                url: '/opengraph-image.png', // Ensure this file is in your 'public' folder
+                width: 1200,
+                height: 630,
+                alt: 'Advaita Amrit Portfolio Preview',
+            },
+        ],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Advaita Amrit - Full Stack Developer',
-		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-		creator: '@advaita_dev',
+		description: 'Student. Developer. Builder. Currently studying Information Science at SIT, Tumkur. Passionate about turning complex logic into clean, efficient code for the web and robotics.',
+		creator: '@amrit_advaita',
+		images: ['/opengraph-image.png'],
 	},
 	robots: {
 		index: true,
@@ -44,7 +53,7 @@ export const metadata: Metadata = {
 			noimageindex: true,
 		},
 	},
-	metadataBase: new URL('https://advaita1.vercel.app'),
+	metadataBase: new URL('https://advaitaamrit.tech'),
 	alternates: {
 		canonical: '/',
 	},
