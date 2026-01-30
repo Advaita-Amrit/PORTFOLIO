@@ -32,7 +32,7 @@ const certificates = [
 	},
 	{
 		title: "Agile and Scrum Training",
-		issuer: "HackerRank",
+		issuer: " Infosys Springboard",
 		date: "30th October 2025",
 		link: "./files/certificates_pdf/Agile and Scrum Training.pdf",
 		description: "The training provides a comprehensive overview of Agile principles and the Scrum framework, equipping learners with the knowledge to manage projects iteratively and incrementally.",
