@@ -22,20 +22,6 @@
 
 A modern, responsive portfolio website showcasing my journey as a Full Stack Developer. Built with Next.js and Tailwind CSS, this portfolio demonstrates my expertise in web development through interactive UI components and seamless user experience.
 
-## ✨ Key Features
-
-<div align="center">
-
-| Feature             | Description                               |
-| ------------------- | ----------------------------------------- |
-| 🎨 Modern Design    | Sleek dark theme with beautiful gradients |
-| 📱 Responsive       | Optimized for all devices                 |
-| ⚡ Fast Performance | Optimized loading and rendering           |
-| 🔍 Smart Search     | Real-time search across portfolio         |
-| 🎭 Animations       | Smooth transitions with Framer Motion     |
-| 📊 Analytics        | Built-in performance monitoring           |
-| 🔒 Security Headers | Enhanced security configurations          |
-| 🤖 SEO Optimized    | Search engine friendly structure          |
 
 </div>
 
@@ -55,8 +41,7 @@ A modern, responsive portfolio website showcasing my journey as a Full Stack Dev
 ## 🛠️ Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/Advaita-Amrit/Software-Dev-Portfolio.git
+
 
 # Install dependencies
 npm install
